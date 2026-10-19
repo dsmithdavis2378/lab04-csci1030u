@@ -28,13 +28,13 @@ def main():
     with open(args.filename) as file:
         for number, line in enumerate(file, start=1):
             if args.pattern in line:
-                print(f"{number}: {line}")
+                print(f"{number}: {line.rstrip('\n')}")
         if args.ignore_case:
             if args.pattern.lower() in line.lower():
-                print(f"{number}: {line}")
+                print(f"{number}: {line.rstrip('\n')}")
         else:
             if args.pattern in line:
-                print(f"{number}: {line}")
+                print(f"{number}: {line.rstrip('\n')}")
 
     
 
