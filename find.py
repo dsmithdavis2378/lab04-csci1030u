@@ -15,7 +15,7 @@ def main():
     parser.add_argument("filename", help="the file to search")
     # TODO: add an optional flag -i / --ignore-case  (use action="store_true")
     parser.add_argument("-i", "--ignore-case", action="store_true", help="ignore case while searching for the pattern")
-    args = parser.parse_args()
+    
     
     args = parser.parse_args()
     # TODO: open args.filename and read its lines. For each line, numbered starting
